@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+:root {
+  --a-display: none;
+  --nav-transform: translateX(-195px);
+}
+nav {
+  position: fixed;
+  height: 100%;
+  width: 200px;
+  background: linear-gradient(to right, rgb(252, 70, 107), rgb(63, 94, 251));
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+  border: 1px solid #f8f8f8;
+  transform: var(--nav-transform);
+}
+.show {
+  --a-display: flex;
+  --nav-transform: translateX(0px);
+}
+nav .icon {
+  height: 1px;
+  width: auto;
+}
+nav i {
+  float: right;
+  margin-top: 10px;
+  margin-right: -23px;
+  transition: 0.3s;
+  color: #fff;
+  height: auto;
+  width: auto;
+  padding: 15px;
+  background: linear-gradient(to right, rgb(252, 92, 125), rgb(106, 130, 251));
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+nav i:hover {
+  transform: scale(1.1,1.1);
+}
+nav .links {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav .links a {
+  text-decoration: none;
+  font-size: auto;
+  font-weight: 1000;
+  color: #f8f8f8;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: 0.3s;
+  display: var(--a-display);
+  margin-top: auto;
+  padding: 2px;
+}
+nav .links a:hover {
+  background-color: #000;
+  transform: scale(1.2, 1.2);
+}
+.home,
+.about {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  background: ;
+}
