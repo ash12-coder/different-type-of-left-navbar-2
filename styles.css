@@ -8,12 +8,12 @@ body {
 }
 :root {
   --a-display: none;
-  --nav-transform: translateX(-195px);
+  --nav-transform: translateX(-97%);
 }
 nav {
   position: fixed;
   height: 100%;
-  width: 200px;
+  width: 50%;
   background: linear-gradient(to right, rgb(252, 70, 107), rgb(63, 94, 251));
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@ nav {
 }
 .show {
   --a-display: flex;
-  --nav-transform: translateX(0px);
+  --nav-transform: translateX(0%);
 }
 nav .icon {
   height: 1px;
@@ -42,7 +42,7 @@ nav i {
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 nav i:hover {
-  transform: scale(1.1,1.1);
+  transform: scale(1.1, 1.1);
 }
 nav .links {
   height: 100%;
@@ -57,20 +57,13 @@ nav .links a {
   font-size: auto;
   font-weight: 1000;
   color: #f8f8f8;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   transition: 0.3s;
   display: var(--a-display);
   margin-top: auto;
-  padding: 2px;
+  padding: 10px;
 }
 nav .links a:hover {
   background-color: #000;
   transform: scale(1.2, 1.2);
-}
-.home,
-.about {
-  height: 100vh;
-  width: 100%;
-  text-align: center;
-  background: ;
 }
